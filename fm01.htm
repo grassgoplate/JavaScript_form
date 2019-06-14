@@ -1,28 +1,40 @@
-<!--javascript¨ú±oªí³æ text,password¤¸¥ó¶µ¥Ø; 
-  ¦bµ{¦¡¤¤¥[¤Jµù¸Ñ-->''
-
+<!--javascriptå–å¾—è¡¨å–® text,passwordå…ƒä»¶é …ç›®; 
+  åœ¨ç¨‹å¼ä¸­åŠ å…¥è¨»è§£-->''
+<body>
+<head>
 <script language="javascript">
 function show01(form){
   ac=form.txtAccount.value;
   pa=form.txtPassword.value;
-  alert("§A¿é¤Jªº±b¸¹©m¦W¬O: "+ac+"\n"+"±K½X¬O: "+pa);
+  alert("ä½ è¼¸å…¥çš„å¸³è™Ÿå§“åæ˜¯: "+ac+"\n"+"å¯†ç¢¼æ˜¯: "+pa);
   return;
 }
 </script>
-
-<!--¿é¤J§Aªº±b¸¹»P±K½X-->
-<!DOCTYPE html>
-<html>
-<head>
-<title>¤å¦r¤è¶ô»P±K½X¤è¶ô</title>
+<style>
+    .box1{
+        width:250px;
+        border:5px dotted royalblue;
+        background-color:lemonchiffon;
+        padding:30px;
+    }
+    .but1{
+        background-color: aquamarine;
+        color:black; 
+    }
+    .but2{
+        background-color:turquoise;
+        color:brown;
+    }
+</style>
 </head>
 <body>
 <form>
-  ½Ğ¿é¤J§Aªº±b¸¹»P±K½X¡G<p>
-  ±b¸¹¡G<input type="text" name="txtAccount" size="20"><br>
-  ±K½X¡G<input type="password" name="txtPassword" size="20" maxlength="6"><br>
-  <input type="reset" value="²M°£">
-  <input type="submit" value="°e¥X" onclick=show01(this.form)>  
+<div class=box1>    
+  è«‹è¼¸å…¥ä½ çš„å¸³è™Ÿèˆ‡å¯†ç¢¼ï¼š<p>
+  å¸³è™Ÿï¼š<input type="text" name="txtAccount" size="20"><br>
+  å¯†ç¢¼ï¼š<input type="password" name="txtPassword" size="20" maxlength="6"><br>
+  <input type="reset" value="æ¸…é™¤" class=but1>
+  <input type="submit" value="é€å‡º" class=but2 onclick=show01(this.form)>  
 </form>
 </body>
 </html>

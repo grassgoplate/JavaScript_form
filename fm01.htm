@@ -1,0 +1,28 @@
+<!--javascript取得表單 text,password元件項目; 
+  在程式中加入註解-->''
+
+<script language="javascript">
+function show01(form){
+  ac=form.txtAccount.value;
+  pa=form.txtPassword.value;
+  alert("你輸入的帳號姓名是: "+ac+"\n"+"密碼是: "+pa);
+  return;
+}
+</script>
+
+<!--輸入你的帳號與密碼-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>文字方塊與密碼方塊</title>
+</head>
+<body>
+<form>
+  請輸入你的帳號與密碼：<p>
+  帳號：<input type="text" name="txtAccount" size="20"><br>
+  密碼：<input type="password" name="txtPassword" size="20" maxlength="6"><br>
+  <input type="reset" value="清除">
+  <input type="submit" value="送出" onclick=show01(this.form)>  
+</form>
+</body>
+</html>

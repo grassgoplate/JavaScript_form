@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>累加</title>
+<!-- -->
+<style>
+.box1{
+	width:250px;
+	border:2px solid blue;
+	background-color:#FFCE9C;
+	padding:30px;
+	border-radius:8px;
+}
+.but1{
+	background-color:#94D6E7;
+	color:red;
+}
+.but2{
+	background-color:#6373B5;
+	color:#ffffff;
+}
+.box2{
+	padding-left:50px;
+}
+.sp1{
+	background-color:#C6EF8C;
+}
+#inp1{
+	width:180px;
+}
+</style>
+</head>
+<body>
+<form action="add02b.php">
+<div class=box1>
+  累加計算N1至N2間各值的和：<p>
+  <div><span class=sp1>N1值：</span>
+    <input id=inp1 type="text" name="n1"></div>
+  <div><span class=sp1>N2值：</span>
+    <input id=inp1 type="text" name="n2" size="20"></div>
+  <div class=box2>
+    <input type="reset" value="清除" class=but1>&nbsp;&nbsp;
+    <input type="submit" value="計算" class=but2> 
+  </div> 
+</div>
+</form>
+</body>
+</html>
